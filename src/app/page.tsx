@@ -24,10 +24,10 @@ export default function Home() {
             config={{ appendOnPaste: true, mode: "auto" }}
             onClientUploadComplete={(res: any) => {
               console.log(res[0]);
-              toast.success("File Uploaded Successfully!");
               setUrl(res[0].url);
             }}
             onUploadError={(error: Error) => {
+              console.error(error);
               toast.error("Error: " + error.message);
             }}
           />
