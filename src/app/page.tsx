@@ -12,7 +12,9 @@ export default function Home() {
   return (
     <div className="flex h-screen flex-col p-24 sm:p-12">
       <div className="flex w-full flex-wrap items-center justify-between font-mono">
-        <span className="text-2xl font-bold">Z-CDN</span>
+        <span className="bg-gradient-to-r from-purple-300 to-blue-600 bg-clip-text text-3xl font-extrabold text-transparent">
+          Z-CDN
+        </span>
         <span className="text-xl">Fast Free CDN</span>
       </div>
 
@@ -41,6 +43,16 @@ export default function Home() {
           <span className="w-full break-all text-center">{url}</span>
         </div>
       </main>
+      <footer className="text-center">
+        Made with ❤️ by
+        <span className="mx-2 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-xl font-extrabold text-transparent">
+          Zainab Radhi
+        </span>
+        and
+        <span className="mx-2 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-xl font-extrabold text-transparent">
+          Widad Razzaq
+        </span>
+      </footer>
       <Toaster
         toastOptions={{
           style: {
