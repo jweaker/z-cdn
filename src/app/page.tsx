@@ -10,7 +10,7 @@ export default function Home() {
     toast.success("Url saved to clipboard!");
   };
   return (
-    <div className="flex h-screen flex-col p-24 sm:p-12">
+    <div className="flex h-screen flex-col p-12 md:p-20">
       <div className="flex w-full flex-wrap items-center justify-between font-mono">
         <span className="bg-gradient-to-r from-purple-300 to-blue-600 bg-clip-text text-3xl font-extrabold text-transparent">
           Z-CDN
@@ -43,14 +43,16 @@ export default function Home() {
           <span className="w-full break-all text-center">{url}</span>
         </div>
       </main>
-      <footer className="text-center">
-        Made with ❤️ by
-        <span className="mx-2 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-xl font-extrabold text-transparent">
-          Zainab Radhi
-        </span>
-        and
-        <span className="mx-2 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-xl font-extrabold text-transparent">
-          Widad Razzaq
+      <footer className="text-center text-sm md:text-base">
+        <span className="inline-block">Made with ❤️ by</span>
+        <span className="inline-block">
+          <span className="mx-2 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent md:text-xl">
+            Zainab Radhi
+          </span>
+          and
+          <span className="mx-2 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent md:text-xl">
+            Widad Razzaq
+          </span>
         </span>
       </footer>
       <Toaster
