@@ -47,11 +47,7 @@ export default function Home() {
         <span className="inline-block">Made with ❤️ by</span>
         <span className="inline-block">
           <span className="mx-2 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent md:text-xl">
-            Zainab Radhi
-          </span>
-          and
-          <span className="mx-2 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-extrabold text-transparent md:text-xl">
-            Widad Razzaq
+           Ahmed Shaheed
           </span>
         </span>
       </footer>
