@@ -12,7 +12,7 @@ const twilioTemplateMedia = {
 export const ourFileRouter = {
   // Define as many FileRoutes as you like, each with a unique routeSlug
   upload: f(twilioTemplateMedia).onUploadComplete(async ({ file }) => {
-    return { url: file.appUrl, mimeType: file.type };
+    return { url: file.url, mimeType: file.type };
   }),
 } satisfies FileRouter;
 export type OurFileRouter = typeof ourFileRouter;

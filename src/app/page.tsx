@@ -27,7 +27,7 @@ export default function Home() {
             onClientUploadComplete={(res) => {
               const uploaded = res?.[0];
               if (!uploaded) return;
-              setUrl(uploaded.serverData?.url ?? uploaded.appUrl ?? uploaded.url);
+              setUrl(uploaded.serverData?.url ?? uploaded.url);
             }}
             onUploadError={(error: Error) => {
               console.error(error);
