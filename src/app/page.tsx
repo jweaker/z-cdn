@@ -24,9 +24,10 @@ export default function Home() {
             className="mt-0"
             endpoint="upload"
             config={{ appendOnPaste: true, mode: "auto" }}
-            onClientUploadComplete={(res: any) => {
-              console.log(res[0]);
-              setUrl(res[0].url);
+            onClientUploadComplete={(res) => {
+              const uploaded = res?.[0];
+              if (!uploaded) return;
+              setUrl(uploaded.serverData?.url ?? uploaded.appUrl ?? uploaded.url);
             }}
             onUploadError={(error: Error) => {
               console.error(error);
